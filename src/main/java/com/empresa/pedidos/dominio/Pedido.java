@@ -31,4 +31,7 @@ public class Pedido {
     public void setSubtotal(Double subtotal) { this.subtotal = subtotal; }
     public Double getCosto() { return costo; }
     public void setCosto(Double costo) { this.costo = costo; }
+    public void metodoViolacion() {
+        RepositorioPedidosJpa repo = null;
+    }
 }
