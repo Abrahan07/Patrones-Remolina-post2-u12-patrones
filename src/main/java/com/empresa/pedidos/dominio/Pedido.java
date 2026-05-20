@@ -1,6 +1,5 @@
 package com.empresa.pedidos.dominio;
 import com.empresa.pedidos.infraestructura.persistencia.RepositorioPedidosJpa;
-import com.empresa.pedidos.infraestructura.notificaciones.NotificacionEmail;
 
 import jakarta.persistence.*;
 
@@ -8,7 +7,6 @@ import jakarta.persistence.*;
 @Table(name = "pedidos")
 public class Pedido {
 
-    private NotificacionEmail notificacion;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
