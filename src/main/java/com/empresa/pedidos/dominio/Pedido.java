@@ -32,6 +32,8 @@ public class Pedido {
     public Double getCosto() { return costo; }
     public void setCosto(Double costo) { this.costo = costo; }
     public void metodoViolacion() {
-        RepositorioPedidosJpa repo = null;
+        com.empresa.pedidos.infraestructura.persistencia.RepositorioPedidosJpa repo;
+        repo = null;
+        System.out.println(repo);
     }
 }
